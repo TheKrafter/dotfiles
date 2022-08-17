@@ -2,7 +2,7 @@
 ## My dotfiles.
 
 ![My Wallpaper](Pictures/wallpaper.jpg)
-also, see [my r/unixporn post](Pictures/screenshot.png) 
+also, see [my r/unixporn post](https://www.reddit.com/r/unixporn/comments/wqtn0b/i3_my_first_rice_still_a_few_kinks_to_work_out/) 
 
 Scripts are in `.config/scripts`
 yeah.
