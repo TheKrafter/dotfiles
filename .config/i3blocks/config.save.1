@@ -1,0 +1,29 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+command=/home/asparks/.config/scripts/i3blocks/$BLOCK_NAME
+separator=true
+separator_block_width=15
+
+[mediaplayer]
+#instance=spotify
+label= 
+interval=5
+signal=10
+
+[weather_NOAA]
+#color=#5d5470
+LAT=38.5
+LON=-90.3
+interval=600
+
+[time]
+command=date
+interval=1
+

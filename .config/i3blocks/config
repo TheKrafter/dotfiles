@@ -1,0 +1,74 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+command=/home/asparks/.config/scripts/i3blocks/$BLOCK_NAME
+separator=true
+separator_block_width=15
+
+[mediaplayer]
+#instance=spotify
+label= 
+interval=5
+signal=10
+
+[weather_NOAA]
+#color=#5d5470
+LAT=38.5
+LON=-90.3
+interval=600
+
+[calendar]
+interval=1
+LABEL= 
+#DATEFMT=+%a %b %e %H:%M:%S %Z %Y
+#DATEFMT=+%H:%M:%S
+#SHORTFMT=+%H:%M:%S
+HEIGHT=180
+WIDTH=220
+
+#[time]
+#command=date
+#interval=1
+
+[battery2]
+markup=pango
+interval=30
+
+[volume-pulseaudio]
+command=/home/asparks/.config/scripts/i3blocks/volume-pulseaudio 5 pulse
+interval=once
+signal=1
+#MIXER=[determined automatically]
+#SCONTROL=[determined automatically]
+##exposed format variables: ${SYMB}, ${VOL}, ${INDEX}, ${NAME}
+#LONG_FORMAT="${SYMB} ${VOL}% [${INDEX}:${NAME}]"
+#SHORT_FORMAT="${SYMB} ${VOL}% [${INDEX}]"
+AUDIO_HIGH_SYMBOL='  '
+AUDIO_MED_THRESH=50
+AUDIO_MED_SYMBOL='  '
+AUDIO_LOW_THRESH=0
+AUDIO_LOW_SYMBOL='  '
+AUDIO_DELTA=5
+#DEFAULT_COLOR="#ffffff"
+#MUTED_COLOR="#a0a0a0"
+#USE_ALSA_NAME=0
+#USE_DESCRIPTION=0
+## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
+#SUBSCRIBE=0
+
+[disk]
+LABEL=  
+#DIR=$HOME
+#ALERT_LOW=10
+interval=30
+
+[ssid]
+INTERFACE=wlp2s0
+label= 
+interval=60
